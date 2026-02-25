@@ -1,0 +1,22 @@
+{
+	"required": true,
+	"package": "com.ZXiaosMod.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"target": "DEFAULT",
+	"mixins": [
+		"MixinEnumGameType",
+		"MixinRenderManager",
+		"MixinAbstractClientPlayer",
+		"MixinEntityItem",
+		"server.MixinServerPlayer",
+		"server.MixinNetServerHandler",
+		"MixinPotion",
+		"MixinGuiNewChat"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
