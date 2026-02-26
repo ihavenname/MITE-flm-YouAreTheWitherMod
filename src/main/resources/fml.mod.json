@@ -1,34 +1,35 @@
 {
-	"schemaVersion": 1,
-	"id": "wither",
-	"version": "${version}",
-	"name": "Your Are The Wither Mod",
-	"description": "You Are The Wither",
-	"authors": [
-		"ZXiao","albert721"
-	],
-	"contact": {
-		"homepage": "https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1286681-1-5-1-you-are-the-wither-mod-be-the-wither-v1-8",
-		"sources": ""
-	},
-	"license": "MIT",
-	"icon": "assets/wither/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.ZXiaosMod.WitherMod"
-		]
-	},
-	"mixins": [
-		"wither.mixins.json"
-	],
-	"depends": {
-		"fishmodloader": ">=3.4.0",
-		"minecraft": "1.6.4-mite",
-		"java": ">=17",
-		"rusted_iron_core": ">=1.3.5"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "wither",
+  "version": "${version}",
+  "name": "Your Are The Wither Mod",
+  "description": "You Are The Wither",
+  "authors": [
+    "ZXiao",
+    "albert721"
+  ],
+  "contact": {
+    "homepage": "https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods/1286681-1-5-1-you-are-the-wither-mod-be-the-wither-v1-8",
+    "sources": "https://github.com/MinecraftIsTooEasy/MITE-fml-YouAreTheWitherMod"
+  },
+  "license": "MIT",
+  "icon": "assets/wither/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.ZXiaosMod.WitherMod"
+    ]
+  },
+  "mixins": [
+    "wither.mixins.json"
+  ],
+  "depends": {
+    "fishmodloader": ">=3.4.0",
+    "minecraft": "1.6.4-mite",
+    "java": ">=17",
+    "rusted_iron_core": ">=1.3.5"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }

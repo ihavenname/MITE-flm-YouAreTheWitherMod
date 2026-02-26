@@ -2,6 +2,8 @@ package com.ZXiaosMod;
 
 import com.ZXiaosMod.keybind.GLBKeys;
 import com.ZXiaosMod.server.ServerTick;
+import moddedmite.rustedironcore.api.event.Handlers;
+import moddedmite.rustedironcore.api.util.FabricUtil;
 import net.fabricmc.api.ModInitializer;
 import net.xiaoyu233.fml.ModResourceManager;
 import org.apache.logging.log4j.LogManager;
@@ -16,10 +18,10 @@ public class WitherMod implements ModInitializer {
         LOGGER.info("Wither Mod Load!");
         ModResourceManager.addResourcePackDomain(MOD_ID);
 
-        if (!moddedmite.rustedironcore.api.util.FabricUtil.isServer()) {
-            moddedmite.rustedironcore.api.event.Handlers.Keybinding.register(GLBKeys.INSTANCE);
-            moddedmite.rustedironcore.api.event.Handlers.Tick.register(GLBKeys.INSTANCE);
-            moddedmite.rustedironcore.api.event.Handlers.Tick.register(ServerTick.INSTANCE);
+        if (!FabricUtil.isServer()) {
+            Handlers.Keybinding.register(GLBKeys.INSTANCE);
+            Handlers.Tick.register(GLBKeys.INSTANCE);
+            Handlers.Tick.register(ServerTick.INSTANCE);
         }
     }
 }
